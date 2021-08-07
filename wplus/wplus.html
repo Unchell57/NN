@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/department.css">
+	<script src="../scripts/masonry.pkdg.min.js" defer></script>
+	<script src="../scripts/departmentScripts.js" defer></script>
+	<title>WPlus от N.N.</title>
+</head>
+<body id="bread">
+	<header>
+		<h1>WPlus</h1>
+		<p class="subheader">от N. N.</p>
+		<p class="page description">
+			Изначально N. N. создавалась именно как организация для помощи простым школьникам для выполнения рутинных задач: тесты, в том числе электронные, домашние работы на оценку и другие. Здесь можно получить контакты для оформления заказа или для того, чтобы оставить отзыв, а также прочитать отзывы о наших услугах.
+		</p>
+	</header>
+	<main>
+		<div>
+			<main class="published-books">
+				<button class="buy-button without-product">Заказать услугу</button>
+			</main>
+			<section class="view-reviews">
+				<h2 class="header">Отзывы</h2>
+				<div id="reviews" class="reviews">
+					<div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme">Получил 5 по русскому, химии и не только</p>
+						<p class="review-text">Сервис быстрый и надёжный✓</p>
+						<p class="author">Кряков С.</p>
+					</div>
+					<div class="review">
+						<p class="review-header"></p>
+						<p class="review-theme"></p>
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div>
+					<!-- <div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme"></p> МАКЕТ ОТЗЫВА
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div> -->
+				</div>
+			</section>
+			<section id="leave-review">
+				<h2 class="header">Оставить отзыв</h2>
+				<form class="review-form">
+					<input class="form-element" name="title" placeholder="Заголовок">
+					<textarea class="form-element" name="review" placeholder="Отзыв"></textarea>
+					<select class="form-element" name="product" id="product">
+						<option value="-" disabled selected>Тема отзыва</option>
+						<option value="chalmas">Хлеб "Халмас"</option>
+						<option value="chimo">Хлеб "Химо"</option>
+						<option value="pizza">Пицца</option>
+					</select>
+					<input class="form-element" name="contact" placeholder="Вконтакте, телеграм, email и т.д.">
+					<button class="form-element review-button" type="submit">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</main>
+</body>
+</html>

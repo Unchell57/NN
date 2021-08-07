@@ -1,0 +1,229 @@
+@import url(../style.css);
+
+#leave-review {
+	display: none;
+}
+
+header .subheader {
+	text-align: right;
+	font: 400 italic 50rem Lato, sans-serif;
+	position: relative;
+	right: 34.5%; bottom: 22rem;
+}
+button {
+	padding: 7rem 35rem;
+	font: 700 19rem Montserrat, sans-serif;
+	background: #fff;
+	border: 1.5rem solid #ccc;
+}
+button:not(button[disabled]):hover {
+	background: #222;
+	color: #fff;
+	transition: .1s;
+	cursor: pointer;
+}
+
+/* BOOKS  */
+button.without-product {
+	position: relative;
+	left: calc(60% / 2);
+	width: 40%;
+	box-sizing: border-box;
+	margin: 30rem auto;
+	padding: 20rem 60rem;
+	font-size: 36rem;
+}
+.published-book h2 {
+	margin-top: 30rem;
+}
+.books {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20rem;
+	margin-bottom: 30rem;
+}
+.book {
+	float: left;
+	box-sizing: border-box;
+	position: relative; /* for covers  */
+	width: 25%;
+	min-width: 250rem;
+	font-size: 12px;
+	text-align: center;
+	background: #eee;
+	padding: 25rem;
+	padding-bottom: 15rem;
+	margin-bottom: 20rem;
+}
+.book .cover {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 48%;
+}
+.book .cover img {
+	display: block;
+	max-width: 100%;
+	max-height: 300rem;
+	margin: 0 auto;
+}
+.book .info {
+	margin-top: 290rem; /* this value can be changed for some products*/
+}
+body#bread .book .info {
+	margin-top: 63%;
+}
+.book.chimo .info {
+	margin-top: 290rem !important;
+}
+.book .title {
+	font: 700 22rem Montserrat, sans-serif;
+	margin: 17rem 0;
+}
+.book .desciption {
+	text-align: justify;
+	font: 400 14rem Montserrat, sans-serif;
+	margin-bottom: 17rem;
+}
+.book .price {
+	font: 600 19rem Montserrat, sans-serif;
+	margin-bottom: 15rem;
+}
+
+/* additons */
+
+.book .additions {
+	margin: 10rem 0 15rem;
+}
+.book input.addition {
+	display: none;
+}
+.book label.addition-butt {
+	display: inline-block;
+	padding: 5rem;
+	font: italic 14rem Montserrat, sans-serif;
+	border: 1rem solid #aaa;
+	margin-bottom: 7rem;
+
+	-moz-user-select: none;
+  	-khtml-user-select: none;
+  	-webkit-user-select: none;
+  	user-select: none;
+}
+.book label.addition-butt:hover {
+	cursor: pointer;
+	color: #999;
+}
+input.addition:checked + label.addition-butt {
+	background: #333;
+	color: #fff;
+}
+input.addition:checked + label.addition-butt:hover {
+	color: #999;
+}
+
+/* PRODUCT INFO MESSAGE  */
+.modal-wrapper {
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	background: rgba(0, 0, 0, .25);
+}
+.product-info {
+	position: fixed;
+	top: 50%; left: 25%;
+	width: 55%;
+	padding: 10rem;
+	padding-top: 20rem;
+	background: #fff;
+	border: 1rem solid #333;
+}
+.product-info .header {
+	font: 600 24rem Montserrat, sans-serif;
+	text-align: center;
+	margin-bottom: 15rem;
+}
+.product-info .message {
+	font: 16rem Montserrat, sans-serif;
+	text-align: center;
+}
+.product-info .delete-button {
+	position: absolute;
+	top: 0; right: 0;
+	width: 27rem; height: 34rem;
+}
+.product-info .delete-button:hover {
+	cursor: pointer;
+}
+
+/* REVIEWS */
+
+.view-reviews {
+	margin-bottom: 30rem;
+}
+.view-reviews > h2 {
+	margin-bottom: 15rem;
+}
+.reviews {
+	padding: 0 25%;
+}
+.review {
+	margin-bottom: 25rem;
+}
+.review:last-child {
+	margin-bottom: 0;
+}
+.review-header {
+	text-align: center;
+	font: 700 38rem Montserrat, sans-serif;
+}
+.review-theme {
+	text-align: right;
+	font: 600 italic 18rem Montserrat, sans-serif;
+	margin-bottom: 8rem;
+}
+.review-text {
+	text-align: justify;
+	font: 20rem Montserrat, sans-serif;
+	margin-bottom: 15rem;
+}
+.review .author {
+	font: 600 14rem Montserrat, sans-serif;
+}
+/* Review Form  */
+
+.review-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 45%;
+	position: relative;
+	left: calc(50% - 45% / 2);
+	padding: 10rem 0;
+}
+.publishBook-wrapper {
+
+}
+.publishBook-wrapper label {
+	font: 200 15rem Montserrat, sans-serif;
+}
+.form-element {
+	margin-bottom: 25rem;
+	padding: 10rem;
+	font: 400 14rem Montserrat, sans-serif;
+}
+.form-element:last-child {
+	margin-bottom: 0;
+}
+textarea.form-element {
+	min-height: 60rem;
+	resize: vertical;
+}
+.form-element::placeholder {
+	font: 400 14rem Montserrat, sans-serif;
+}
+.form-element[name="product"] {
+	appearance: none;
+}
+.review-form .review-button {
+	font-weight: 700;
+	margin-top: 15rem;
+}

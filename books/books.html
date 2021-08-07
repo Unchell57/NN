@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/department.css">
+	<script src="../scripts/masonry.pkdg.min.js" defer></script>
+	<script src="../scripts/departmentScripts.js" defer></script>
+	<title>Книги от N.N.</title>
+</head>
+<body>
+	<header>
+		<h1>Книги</h1>
+		<p class="subheader">от N. N.</p>
+		<p class="page description">
+			Издательство – это одно из основных направлений работы N. N.<br>Мы занимаемся поддержкой современной русской культуры, за счёт помощи молодым русским авторам в выпуске и продажи своих произведений, если вы хотите сотрудничать с нами, то можете заполнить <a class="text-anchor" href="#leave-review">форму</a> ниже, а также поддержать нашу деятельность и деятельность русских авторов, купив одну из наших книг.
+		</p>
+	</header>
+	<main>
+		<section class="published-books">
+			<h2 class="header">Книги издательства</h2>
+			<div class="books">
+				<div class="book">
+					<div class="cover">
+						<img src="img/covers/poema.png" alt="Обложка">
+					</div>
+					<div class="info">
+						<p class="title">"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</p>
+						<p class="desciption">
+							Первое произведение русского писателя Богдана Переходы.<br><br>Главный герой со своим братом Ёриком и детьми занимается разбоем, в этот раз они покусились на дорогую картину, но герой узнаёт, что она принадлежит семьи Светланы, его любимой женщины. Что он выберет: озолотить свою семью или предать, но получить благодарность любимой? И к чему его приведёт этот выбор? Читайте в новой поэме.<br><br>Всего в поэме 6 страниц А5 + эпиграф, 3 главы, эпиграф и первая глава доступны бесплатно (контакты для обращения появятся при нажатии на кнопку "Заказать").<br><br>Доступна бесплатная доставка курьером по Новоильинскому району Новокузнецка.
+						</p>
+						<p class="price">50 рублей</p>
+						<button class="buy-button">Заказать</button>
+					</div>
+				</div>
+				<div class="book">
+					<div class="cover">
+						<img src="img/covers/admiral.jpg" alt="Обложка">
+					</div>
+					<div class="info">
+						<p class="title">"Порт адмирала"</p>
+						<p class="desciption">
+							Главный герой со своей компанией узнаёт о местонахождение заброшенного порта, в котором явно есть чем поживиться. Узнав об этом, местные пираты во главе много повидавшем Червём и требует рассказать о месте, обещая долю в добытом золоте. После недолгих раздумий герой соглашается и отправляется в путь. По дороге Червь рассказывает байки и своих сражениях с разными фантастическими тварями, в том числе с огромным осьминогом. Его никто не воспринимает в серьёз, но, возможно, это не просто выдумки старика?<br><br>Рассказ содержить 4 главы, 8-9 страниц А5; 1 глава доступна бесплатно (контакты для обращения появятся при нажатии на кнопку "Заказать").<br><br>Также доступна бесплатная доставка курьером по Новоильинскому району Новокузнецка.
+						</p>
+						<p class="price">70 рублей</p>
+						<button class="buy-button">Заказать</button>
+					</div>
+				</div>
+				<div class="book">
+					<div class="cover">
+						<img src="img/covers/delo.png" alt="Обложка">
+					</div>
+					<div class="info">
+						<p class="title">В процессе</p>
+						<p class="desciption">
+							Мы планируем скоро начать работу над новым произведением, которое будет доступно для покупки здесь.
+						</p>
+						<p class="price">? рублей</p>
+						<button class="buy-button" disabled>Заказать</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div>
+			<section class="view-reviews">
+				<h2 class="header">Отзывы</h2>
+				<div class="reviews">
+					<div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme">О "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" Поэме</p>
+						<p class="review-text">
+							Поэма как для первого прочтённого произведения от автора весьма неплоха. Издательство хорошо постаралось в оформлении книги для читателя. Сюжет пусть и короткий, но наполнен действием. Рифма неплохая, но местами пропадает. Доставка точная и удобная. В общем, оценка 9/10.
+						</p>
+						<p class="author">Герасимова Е.</p>
+					</div>
+					<div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme">О "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" Поэме</p>
+						<p class="review-text">
+							Кстати поэма хорошая. Сюжет интересный. Будет ли продолжение? [ Нет. — Ответ автора ]
+						</p>
+						<p class="author">Штикель Н.</p>
+					</div>
+					<!-- <div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme"></p> МАКЕТ ОТЗЫВА
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div> -->
+				</div>
+			</section>
+			<section id="leave-review">
+				<h2 class="header">Оставить отзыв</h2>
+				<form class="review-form" action="" method="POST" enctype="text/plain">
+					<input class="form-element" name="title" placeholder="Заголовок">
+					<textarea class="form-element" name="review" placeholder="Отзыв/Сообщение"></textarea>
+					<select class="form-element" name="product" id="product">
+						<option value="-" disabled selected>Тема сообщения</option>
+						<option value="Publishment">Издание книги</option>
+						<option value=" ">Б. Перехода "   " Поэма</option>
+						<option value="Affair1">Б. Перехода "Дело №1"</option>
+						<option value="Port">Б. Перехода "Порт адмирала"</option>
+					</select>
+					<input class="form-element" name="contact" placeholder="Вконтакте, телеграм, email и т.д.">
+					<button class="form-element review-button" type="submit">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</main>
+</body>
+</html>

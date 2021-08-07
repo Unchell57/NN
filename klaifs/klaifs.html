@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/department.css">
+	<script src="../scripts/masonry.pkdg.min.js" defer></script>
+	<script src="../scripts/departmentScripts.js" defer></script>
+	<title>Выпечка от N.N.</title>
+</head>
+<body id="bread">
+	<header>
+		<h1>Выпечка</h1>
+		<p class="subheader">от N. N.</p>
+		<p class="page description">
+			Второе отделение N. N. – это выпечка. Иы изготавливаем, пожалуй, самую вкусную и хрустящую выпечку, с быстрой и точной доставкой. Пока что отдел занимается только хлебопечением, но в дальнейщем планируется расширение ассортимента.<br><a href="#reviews">Здесь</a> вы можете почитать отзывы наших клиентов о нас и нашей продукции и убедиться, что мы действительно работает честно и печём хороший хлеб.
+		</p>
+	</header>
+	<main>
+		<section class="published-books">
+			<h2 class="header">Наша выпечка</h2>
+			<div class="books">
+				<div class="book">
+					<div class="cover">
+						<img src="img/covers/chalmas.jpg" alt="Фотография">
+					</div>
+					<div class="info">
+						<p class="title">"Халмас"</p>
+						<p class="desciption">
+							Простейший, но очень вкусный хлеб с хрустящей коркой и безумно нежным мякишем, весом 630-670 граммов.<br><br>Состав: мука пшеничная, растительное масло, сахар, соль, дрожжи сухие.<br><br>По желанию возможна замена воды на молоко, добавление кунжута или корицы.<br><br>Доступна бесплатная доставка курьером по Новоильинскому району Новокузнецка.
+						</p>
+						<div class="additions">
+							<input type="checkbox" id="chalmas-milk" class="addition"><label class="addition-butt" for="chalmas-milk" data-add-price="10">На молоке</label>
+							<input type="checkbox" id="chalmas-sesame" class="addition"><label class="addition-butt" for="chalmas-sesame" data-add-price="3">+Кунжут</label>
+							<input type="checkbox" id="chalmas-cinnamon" class="addition"><label class="addition-butt" for="chalmas-cinnamon" data-add-price="3">+Корица</label>
+						</div>
+						<p class="price">45 рублей</p>
+						<button class="buy-button">Заказать</button>
+					</div>
+				</div>
+				<div class="book chimo">
+					<div class="cover">
+						<img src="img/covers/chimo.jpg" alt="Фотография">
+					</div>
+					<div class="info">
+						<p class="title">"Химо"</p>
+						<p class="desciption">
+							Хлеб изготовлен по технологии французского, благодаря чему плотнее обычного, но даже так булка ощущается невесомой, а сам хлеб нежно тает во рту, весит это чудо около 600 граммов.<br><br>Состав: мука пшеничная, сахар, растительное масло, соль, дрожжи сухие.<br><br>По желанию возможна замена воды на молоко, добавление кунжута или корицы.<br><br>Доступна бесплатная доставка курьером по Новоильинскому району Новокузнецка.
+						</p>
+						<div class="additions">
+							<input type="checkbox" id="chimo-milk" class="addition"><label class="addition-butt" for="chimo-milk" data-add-price="10">На молоке</label>
+							<input type="checkbox" id="chimo-sesame" class="addition"><label class="addition-butt" for="chimo-sesame" data-add-price="3">+Кунжут</label>
+							<input type="checkbox" id="chimo-cinnamon" class="addition"><label class="addition-butt" for="chimo-cinnamon" data-add-price="3">+Корица</label>
+						</div>
+						<p class="price">55 рублей</p>
+						<button class="buy-button">Заказать</button>
+					</div>
+				</div>
+				<div class="book">
+					<div class="cover">
+						<img src="img/covers/pizza.png">
+					</div>
+					<div class="info">
+						<p class="title">Пицца</p>
+						<p class="desciption">
+							Сейчас мы планируем начать приготовление и доставку пиццы, но пока что это только в процессе.
+						</p>
+						<p class="price">? рублей</p>
+						<button class="buy-button" disabled>Заказать</button>
+					</div>
+				</div>
+			</div>
+			<!-- <script>
+				// masonry for products
+				const grid = document.querySelector('.books');
+				const msnry = new Masonry(grid, {
+					itemSelector: '.books .book',
+					gutter: '.gutter-sizer',
+					percentPosition: true,
+				});
+			</script> -->
+		</section>
+		<div>
+			<section class="view-reviews">
+				<h2 class="header">Отзывы</h2>
+				<div id="reviews" class="reviews">
+					<div class="review">
+						<p class="header"></p>
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div>
+					<div class="review">
+						<p class="header"></p>
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div>
+					<!-- <div class="review">
+						<p class="review-header">*&nbsp;*&nbsp;*</p>
+						<p class="review-theme"></p> МАКЕТ ОТЗЫВА
+						<p class="review-text"></p>
+						<p class="author"></p>
+					</div> -->
+				</div>
+			</section>
+			<section id="leave-review">
+				<h2 class="header">Оставить отзыв</h2>
+				<form class="review-form">
+					<input class="form-element" name="title" placeholder="Заголовок">
+					<textarea class="form-element" name="review" placeholder="Отзыв"></textarea>
+					<select class="form-element" name="product" id="product">
+						<option value="-" disabled selected>Тема отзыва</option>
+						<option value="chalmas">Хлеб "Халмас"</option>
+						<option value="chimo">Хлеб "Химо"</option>
+						<option value="pizza">Пицца</option>
+					</select>
+					<input class="form-element" name="contact" placeholder="Вконтакте, телеграм, email и т.д.">
+					<button class="form-element review-button" type="submit">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
