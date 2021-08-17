@@ -69,12 +69,6 @@ button.without-product {
 .book .info {
 	margin-top: 290rem; /* this value can be changed for some products*/
 }
-body#bread .book .info {
-	margin-top: 63%;
-}
-.book.chimo .info {
-	margin-top: 290rem !important;
-}
 .book .title {
 	font: 700 22rem Montserrat, sans-serif;
 	margin: 17rem 0;
