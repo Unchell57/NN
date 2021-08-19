@@ -25,10 +25,7 @@ button:not(button[disabled]):hover {
 
 /* BOOKS  */
 button.without-product {
-	position: relative;
-	left: calc(60% / 2);
-	width: 40%;
-	box-sizing: border-box;
+	display: block;
 	margin: 30rem auto;
 	padding: 20rem 60rem;
 	font-size: 36rem;
