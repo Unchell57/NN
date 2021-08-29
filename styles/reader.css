@@ -1,5 +1,43 @@
 @import url("../styles/department.css");
 
-#reader main {
-	font-size: 14rem;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+	padding: 25rem 40rem;
+}
+body main {
+	color: #000;
+	text-align: justify;
+	font: 20rem/26rem Merriweather, "Times New Roman", serif;
+	margin: 15rem 0 25rem;
+}
+header .subheader {
+	/* addition to styles in department.css */
+	right: 25%;
+	bottom: 15rem;
+}
+.donationList {
+	list-style: upper-roman;
+	margin: 20rem auto 0;
+	padding: 0 10%;
+}
+.donationList > .donation {
+	color: #000;
+	font: 18rem/20rem Montserrat, sans-serif;
+	margin-top: 10rem;
+}
+.donationList > .donation:first-child {
+	margin-top: 0;
+}
+/* SPECIFIC MEDIAS TO  STYLE.CSS */
+@media screen and (max-width: 426px) {
+	html {
+		font-size: .6px;
+	}
+	header h1 {
+		font-size: 75rem;
+	}
+	header .subheader {
+		font-size: 35rem;
+	}
 }
