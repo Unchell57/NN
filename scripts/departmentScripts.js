@@ -1,9 +1,10 @@
 'use strict';
 
 // Modal for order contacts
-const buyButtons = document.querySelectorAll('.buy-button');
+const buyButtons = document.querySelectorAll('button.buy-button');
 
 for(let buyButton of buyButtons) {
+
 	buyButton.addEventListener('click', () => {
 		const wrapper = document.createElement('DIV');
 		wrapper.classList.add('modal-wrapper');

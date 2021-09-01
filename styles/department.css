@@ -10,13 +10,16 @@ header .subheader {
 	position: relative;
 	right: 34.5%; bottom: 22rem;
 }
-button {
+button,
+a.buy-button {
 	padding: 7rem 35rem;
+	color: #000;
 	font: 700 19rem Montserrat, sans-serif;
 	background: #fff;
 	border: 1.5rem solid #ccc;
 }
-button:not(button[disabled]):hover {
+button:not(button[disabled]):hover,
+a.buy-button:hover {
 	background: #222;
 	color: #fff;
 	transition: .1s;
