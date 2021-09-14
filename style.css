@@ -1,6 +1,7 @@
 @import url(reset.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 
 html {
@@ -30,6 +31,9 @@ textarea:focus::placeholder {
 }
 
 /* PATTERNS  */
+.separator {
+
+}
 .returnAnch {
 	margin: 25rem 0 5rem;
 }
